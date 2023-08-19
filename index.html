@@ -7,23 +7,40 @@
 </head>
   <body>
     <div id="container">
-      <header>Hi there, {name}</header>
+      <aside id="aside-left">
 
-      <aside>
+        <img id="dashboard-img" src="img/dashboard.svg" alt="Dashboard">
+        <h2>Dashboard</h2>
+
         <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communications</li>
-          <li></li>
-          <li></li>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
+          <li><img src="img/home.svg" alt="Home">Home</li>
+          <li><img src="img/profile.svg" alt="Profile">Profile</li>
+          <li><img src="img/messages.svg" alt="Messages">Messages</li>
+          <li><img src="img/history.svg" alt="History">History</li>
+          <li><img src="img/tasks.svg" alt="Tasks">Tasks</li>
+          <li><img src="img/communities.svg" alt="Communities">Communities</li>
+        </ul>
+        <ul>
+          <li><img src="img/settings.svg" alt="Settings">Settings</li>
+          <li><img src="img/support.svg" alt="Support">Support</li>
+          <li><img src="img/privacy.svg" alt="Privacy">Privacy</li>
         </ul>
       </aside>
+
+      <header>
+        <img id="profile-pic" src="img/Trent.jpg" alt="Profile Picture">
+        <h3>Hi there,</h3>
+        <h2>Trent (@Trent)</h2>
+
+        <img src="img/search.svg" alt="Search">
+        <input type="search" name="Search" id="header-search">
+        <label for="header-search"></label>
+        <img src="img/notifications.svg" alt="Notifications">
+
+        <button id="New">New</button>
+        <button id="Upload">Upload</button>
+        <button id="Share">Share</button>
+      </header>
 
       <main>
         <div id="projects">
@@ -58,36 +75,44 @@
           </div>
         </div>
 
-        <div id="announcements">
-          <div class="announcement">
-            <p>Site Maintenance</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deserunt enim minima optio tempore veritatis?</p>
+          <div id="announcements">
+            <div class="announcement">
+              <h4>Site Maintenance</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deserunt enim minima optio tempore veritatis?</p>
+            </div>
+
+            <div class="announcement">
+              <h4>Community Share Day</h4>
+              <p>periam blanditiis cumque fuga harum modi odit voluptate.</p>
+            </div>
+
+            <div class="announcement">
+              <h4>Updated Privacy Policy</h4>
+              <p>Expedita facere ipsum laboriosam perspiciatis quidem!</p>
+            </div>
           </div>
 
-          <div class="announcement">
-            <p>Community Share Day</p>
-            <p>periam blanditiis cumque fuga harum modi odit voluptate.</p>
-          </div>
+<!--          <div id="trending">-->
+<!--            <div class="trend">-->
+<!--              <h4>Lorem.</h4>-->
+<!--              <p>Lorem ipsum dolor.</p>-->
+<!--            </div>-->
 
-          <div class="announcement">
-            <p>Updated Privacy Policy</p>
-            <p>Expedita facere ipsum laboriosam perspiciatis quidem!</p>
-          </div>
-        </div>
+<!--            <div class="trend">-->
+<!--              <h4>Aspernatur.</h4>-->
+<!--              <p>Molestiae, nobis, voluptates.</p>-->
+<!--            </div>-->
 
-        <div id="trending">
-          <h4>Lorem.</h4>
-          <p>Lorem ipsum dolor.</p>
+<!--            <div class="trend">-->
+<!--              <h4>Iure.</h4>-->
+<!--              <p>Facere, facilis, repudiandae?</p>-->
+<!--            </div>-->
 
-          <h4>Aspernatur.</h4>
-          <p>Molestiae, nobis, voluptates.</p>
-
-          <h4>Iure.</h4>
-          <p>Facere, facilis, repudiandae?</p>
-
-          <h4>Quam?</h4>
-          <p>Molestias, vero voluptates?</p>
-        </div>
+<!--            <div class="trend">-->
+<!--              <h4>Quam?</h4>-->
+<!--              <p>Molestias, vero voluptates?</p>-->
+<!--            </div>-->
+<!--          </div>-->
 
       </main>
     </div>

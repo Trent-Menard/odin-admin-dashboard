@@ -1,0 +1,93 @@
+
+body {
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 24px;
+    font-family: Roboto, serif;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+li img {
+    margin-right: 1rem;
+    width: 30px;
+}
+
+ul {
+    margin-right: 5rem;
+    margin-top: 5rem;
+}
+
+#dashboard-img {
+    width: 65px;
+}
+
+#container {
+    /*height: 100%;*/
+    display: grid; /* 2 x 2 */
+    grid-template-areas:
+            "aside header"
+            "aside main";
+}
+
+#aside-left {
+    grid-area: aside;
+    background-color: dodgerblue;
+}
+
+header {
+    /*margin: 20px;*/
+    /*display: flex;*/
+    grid-area: header;
+}
+
+#header-search {
+    border: 2px solid black;
+    /*width: 30rem;*/
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+#profile-pic {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/*button {
+    font-size: 20px;
+    margin: 20px;
+    padding: 5px;
+    background-color: dodgerblue;
+    border-radius: 15px;
+}*/
+
+main {
+    grid-area: main;
+    background-color: lightgray;
+}
+
+#projects {
+    display: grid;
+    gap: 25px; /* 3 x 2 */
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#projects > div, #announcements > div, #trending > div {
+    border-radius: 5px;
+    background-color: white;
+}
+
+#projects > div {
+    border-left: 5px solid orange;
+}
+
+#announcements {
+    display: grid;
+    gap: 10px; /* 3 x 1 */
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+}
