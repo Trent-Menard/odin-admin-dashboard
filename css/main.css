@@ -1,3 +1,6 @@
+* {
+    font-family: Arial, serif;
+}
 
 body {
     margin: 0;
@@ -18,15 +21,21 @@ li img {
 
 ul {
     margin-right: 5rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
-#dashboard-img {
+#dashboard-img{
     width: 65px;
 }
 
+#dashboard-txt {
+    position: relative;
+    top: -66px;
+    left: 65px;
+}
+
 #container {
-    /*height: 100%;*/
+    height: 100%;
     display: grid; /* 2 x 2 */
     grid-template-areas:
             "aside header"
@@ -39,30 +48,95 @@ ul {
 }
 
 header {
-    /*margin: 20px;*/
-    /*display: flex;*/
-    grid-area: header;
+    margin: 2% 2% -2%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0;
 }
 
-#header-search {
+#header-search-icon {
+    justify-self: start;
+    grid-row: 1 / 1;
+    grid-column: 1 / 2;
+    margin-top: 6%;
+}
+
+#header-search-input {
+    margin-top: 2%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 2;
+
+    width: 100%;
+    height: 1.8rem;
     border: 2px solid black;
-    /*width: 30rem;*/
     border-radius: 10px;
     background-color: lightgray;
 }
 
-#profile-pic {
-    width: 100px;
+label {
+    grid-row: 1 / 1;
+    grid-column: 1 / 2;
+    margin-top: 1.5%;
+    margin-left: 20%;
+    width: 220%;
+}
+
+#header-notification-img {
+    justify-self: start;
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+    margin-top: 6%;
+}
+
+#header-username {
+    justify-self: center;
+    margin-top: 6%;
+    margin-right: 8%;
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+}
+
+#profile-pic-mini {
+    position: relative;
+    grid-column: 3 / 3;
+
+    margin-top: -42%;
+    margin-left: 9%;
+    width: 60px;
     border-radius: 50%;
 }
 
-/*button {
-    font-size: 20px;
-    margin: 20px;
-    padding: 5px;
+#header-profile-pic {
+    position: relative;
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 0.4rem;
+
+}
+
+#header-hi, #header-name-handle {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    margin-left: 7rem;
+}
+
+#header-name-handle {
+    margin-top: 3rem;
+}
+
+button {
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+
+    /*font-size: 20px;*/
+    /*margin: 20px;*/
+    /*padding: 5px;*/
     background-color: dodgerblue;
     border-radius: 15px;
-}*/
+}
 
 main {
     grid-area: main;
@@ -70,6 +144,7 @@ main {
 }
 
 #projects {
+    margin: 2rem;
     display: grid;
     gap: 25px; /* 3 x 2 */
     grid-template-rows: repeat(3, 1fr);
