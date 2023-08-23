@@ -172,7 +172,7 @@ main {
 .project-icons > img {
     position: relative;
     left: 72%;
-    top: 0.5rem;
+    top: 5rem;
     width: 25px;
     margin: 5px;
     height: 25px;
@@ -181,7 +181,7 @@ main {
 .project:nth-child(4) img {
     position: relative;
     left: 72%;
-    top: 2.5rem;
+    top: 7rem;
 }
 
 
@@ -202,17 +202,36 @@ main {
 
 #trending {
     display: grid;
-    margin-top: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 #trending > div{
     padding: 1rem;
+    height: 150px;
+}
+
+.trend > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.trend {
+    grid-column: 1 / 4;
+}
+
+.trend h4, .trend p {
+    position: relative;
+    left: 5rem;
+    top: 4.5rem;
 }
 
 #trending-txt {
     position: relative;
-    top: 2rem;
+    top: 1rem;
 }
+
 #announcements-txt {
     position: relative;
     bottom: -1rem;
